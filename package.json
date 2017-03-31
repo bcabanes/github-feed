@@ -15,7 +15,9 @@
     "eslint-plugin-import": "2.2.0",
     "eslint-plugin-jsx-a11y": "4.0.0",
     "eslint-plugin-react": "6.10.3",
+    "feedparser": "2.1.0",
     "flow-bin": "0.42.0",
+    "jsonfile": "2.4.0",
     "normalize.css": "6.0.0",
     "react-scripts": "0.9.5"
   },
@@ -25,7 +27,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "commit": "git-cz",
-    "flow": "flow"
+    "flow": "flow",
+    "get-feed": "node tools/get-feed.js"
   },
   "config": {
     "commitizen": {
