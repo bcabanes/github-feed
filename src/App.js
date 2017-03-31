@@ -1,7 +1,8 @@
 // @flow
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import logo from './logo.svg'
+import './App.css'
+import 'normalize.css/normalize.css'
 
 // Components
 import { Item } from './components/item'
@@ -19,8 +20,8 @@ class App extends Component {
         </p>
         <Item />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

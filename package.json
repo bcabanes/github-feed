@@ -10,6 +10,7 @@
     "commitizen": "2.9.6",
     "cz-conventional-changelog": "2.0.0",
     "flow-bin": "0.42.0",
+    "normalize.css": "6.0.0",
     "react-scripts": "0.9.5"
   },
   "scripts": {
