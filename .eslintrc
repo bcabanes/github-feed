@@ -1,0 +1,22 @@
+  {
+    "extends": [
+      "react-app"
+    ],
+    "plugins": [
+      "jsx-a11y"
+    ],
+    "rules": {
+      "semi": [
+        "error",
+        "never"
+      ],
+      "no-unused-vars": [
+        2, {
+          "vars": "all",
+          "args": "none"
+        }
+      ],
+    "jsx-a11y/img-has-alt": 2,
+    "jsx-a11y/lang": 2,
+    }
+  }
