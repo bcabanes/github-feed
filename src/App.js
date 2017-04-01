@@ -28,7 +28,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavigationBar />
-        <main className="App-wrapper">
+        <main className="wrapper">
           <ISSLiveStream />
           {itemList.map((item) => <NewsItem key={item.id} {...item} />)}
         </main>

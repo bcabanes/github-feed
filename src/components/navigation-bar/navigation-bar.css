@@ -1,0 +1,10 @@
+.navigation-bar {
+  background: var(--color-background-primary);
+  color: #FFFFFF;
+}
+
+.navigation-bar__logo {
+  fill: #FFFFFF;
+  height: 24px;
+  width: 24px;
+}

@@ -1,13 +1,16 @@
 // @flow
 import React, { Component } from 'react'
-import logo from '../../logo.svg'
+
+// Styles
+import './navigation-bar.css'
 
 export class NavigationBar extends Component {
   render() {
     return (
-      <div className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>Now In Space</h2>
+      <div className='navigation-bar'>
+        <div className='wrapper'>
+          <h2 className='navigation-bar__title'>Now In Space</h2>
+        </div>
       </div>
     )
   }
