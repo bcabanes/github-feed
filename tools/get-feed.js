@@ -26,6 +26,7 @@ feedparser.on('readable', function() {
       author: item.author,
       categories: item.categories,
       date: item.date,
+      id: feed.length + 1,
       image: item.image,
       link: item.link,
       title: item.title
