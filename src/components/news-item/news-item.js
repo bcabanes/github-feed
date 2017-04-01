@@ -4,8 +4,11 @@ import React, { Component, PropTypes } from 'react'
 // Styles
 import './news-item.css'
 
-// Components
-import { NewsLink } from '../news-link'
+const getDomainFromUrl = (url: string): string => {
+  const regex = /:\/\/(.[^/]+)/
+  const domain = url.match(regex)
+  return domain ? domain[1] : ''
+}
 
 export class NewsItem extends Component {
   static propTypes = {
@@ -21,11 +24,12 @@ export class NewsItem extends Component {
     const dateView = new Date(date)
     return (
       <div className='news-item'>
-        <span className='news-item--title'>
-          <NewsLink target={link}>{title}</NewsLink>
-        </span>
+        <a className='news--item__link' href={link} target='_blank'>
+          {title} {' '}
+          <span className='news-item__metas'>({getDomainFromUrl(link)})</span>
+        </a>
         <br />
-        <span className='news-item--metas'>
+        <span className='news-item__metas'>
           on {dateView.getDate()}/{dateView.getMonth()}/{dateView.getFullYear()}
           {' | '}
           by {author}

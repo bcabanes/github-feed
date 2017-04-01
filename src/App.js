@@ -5,8 +5,9 @@ import React, { Component } from 'react'
 import { getFeed } from './utils'
 
 // Styles
-import './App.css'
 import 'normalize.css/normalize.css'
+import './variables.css'
+import './App.css'
 
 // Components
 import { ISSLiveStream } from './components/iss-live-stream'
