@@ -10,7 +10,7 @@ import 'normalize.css/normalize.css'
 
 // Components
 import { ISSLiveStream } from './components/iss-live-stream'
-import { Item } from './components/item'
+import { NewsItem } from './components/news-item'
 import { NavigationBar } from './components/navigation-bar'
 
 class App extends Component {
@@ -27,9 +27,9 @@ class App extends Component {
     return (
       <div className="App">
         <NavigationBar />
-        <main className="app-wrapper">
+        <main className="App-wrapper">
           <ISSLiveStream />
-          {itemList.map((item) => <Item key={item.id} {...item} />)}
+          {itemList.map((item) => <NewsItem key={item.id} {...item} />)}
         </main>
       </div>
     )
