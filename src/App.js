@@ -1,5 +1,9 @@
 // @flow
 import React, { Component } from 'react'
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom'
 
 // Utils
 import { getFeed } from './utils'
@@ -11,7 +15,7 @@ import './App.css'
 
 // Components
 import { ISSLiveStream } from './components/iss-live-stream'
-import { NewsItem } from './components/news-item'
+import { NewsList } from './components/news-list'
 import { NavigationBar } from './components/navigation-bar'
 
 class App extends Component {
@@ -26,13 +30,15 @@ class App extends Component {
   render() {
     const { itemList } = this.state
     return (
-      <div className="App">
-        <NavigationBar />
-        <main className="wrapper">
-          <ISSLiveStream />
-          {itemList.map((item) => <NewsItem key={item.id} {...item} />)}
-        </main>
-      </div>
+      <Router>
+        <div className="App">
+          <NavigationBar />
+          <main className="wrapper">
+            <Route exact path="/" component={NewsList(itemList)} />
+            <Route path="/iss-live" component={ISSLiveStream} />
+          </main>
+        </div>
+      </Router>
     )
   }
 }

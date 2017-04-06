@@ -1,5 +1,6 @@
 // @flow
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 // Styles
 import './navigation-bar.css'
@@ -10,6 +11,10 @@ export class NavigationBar extends Component {
       <div className='navigation-bar'>
         <div className='wrapper'>
           <h2 className='navigation-bar__title'>Now In Space</h2>
+          <p>
+            <Link to="/">Feed</Link> {' | '}
+            <Link to="/iss-live">ISS live</Link>
+          </p>
         </div>
       </div>
     )
