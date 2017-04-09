@@ -13,7 +13,7 @@ export class NavigationBar extends Component {
           <h2 className='navigation-bar__title'>Now In Space</h2>
           <p>
             <Link to="/">Feed</Link> {' | '}
-            <Link to="/iss-live">ISS live</Link>
+            <Link to="/live-streams">ISS live</Link>
           </p>
         </div>
       </div>
